@@ -1,0 +1,29 @@
+{
+  "name": "freetimesf",
+  "version": "1.0.0",
+  "description": "Website to link volunteers and organizations in San Francisco.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node scripts/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johndoherty/freetimesf.git"
+  },
+  "author": "John Doherty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johndoherty/freetimesf/issues"
+  },
+  "homepage": "https://github.com/johndoherty/freetimesf#readme",
+  "dependencies": {
+    "front-matter": "^3.0.2",
+    "handlebars": "^4.5.3",
+    "markdown": "^0.5.0",
+    "pretty": "^2.0.0"
+  },
+  "devDependencies": {
+    "livereload": "^0.8.2"
+  }
+}
