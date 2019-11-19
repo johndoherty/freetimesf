@@ -1,3 +1,8 @@
+---
+title: About
+layout: primary.hbs
+---
+
 # About
 
 ## Why

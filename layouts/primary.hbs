@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
     <title>Free Time SF</title>
+    <meta charset="utf-8" />
+    <meta name="viewport"content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="author" content="Free Time SF" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="style.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="common/style.css?v={{count}}" />
     {{#each stylesheet}}
     <link rel="stylesheet" href="{{this}}" />
     {{/each}}
+
+    {{#if dev}}
+    <script src="http://localhost:35729/livereload.js"></script>
+    {{/if}}
   </head>
   <body>
-    <header class="center-container">
-      <div class="centered">
-        <a class="home" href="index.html">
-          Free Time SF
-        </a>
+    <header class="center-h-container">
+      <div class="centered-h center-v-container">
+        <a class="home" href="index.html">Free Time SF</a>
         <nav>
           <ul>
             <li><a href="about.html">About</a></li>
-            <li><a href="data.html">Data</a></li>
+            <li><a href="organize.html">Data</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    {{{contents}}}
+    <div class="center-h-container">
+      <div id="content" class="centered-h">
+        {{{contents}}}
+      </div>
+    </div>
   </body>
 </html>
 

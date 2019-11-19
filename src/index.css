@@ -1,0 +1,29 @@
+.primary-link-holder {
+  display: flex;
+  justify-content: center;
+}
+
+a.primary {
+  padding: .6em;
+  margin-top: 1em;
+  text-decoration: none;
+  color: black;
+  border: solid 0.1em;
+  max-width: 500px;
+  width: 90%;
+}
+
+a.primary:hover {
+  background-color: #f0faff;
+}
+
+a.primary h2 {
+  text-align: center;
+}
+
+.subheading {
+	color: #777;
+	font-weight: lighter;
+	font-size: .9em;
+  text-align: center;
+}
