@@ -17,7 +17,7 @@ stylesheet: ["volunteer.css"]
   </ol>
 </p>
 
-<form>
+<form name="volunteer-test" method="POST" data-netlify="true">
   <h2>Contact</h2>
   <p>
     <label>Email <input type="email" title="Where we will send your weekly newsletter." required/></label>
@@ -149,28 +149,28 @@ stylesheet: ["volunteer.css"]
   <h2>Areas of Interest</h2>
   <ul class="check-list">
     <li>
-      <label><input type="checkbox" />Animals</label>
+      <label><input type="checkbox" id="interest-animals" />Animals</label>
     </li>
     <li>
-      <label><input type="checkbox" />Arts</label>
+      <label><input type="checkbox" id="interest-arts" />Arts</label>
     </li>
     <li>
-      <label><input type="checkbox" />Education</label>
+      <label><input type="checkbox" id="interest-education"/>Education</label>
     </li>
     <li>
-      <label><input type="checkbox" />Environment</label>
+      <label><input type="checkbox" id="interest-environment"/>Environment</label>
     </li>
     <li>
-      <label><input type="checkbox" />Health Care</label>
+      <label><input type="checkbox" id="interest-health"/>Health Care</label>
     </li>
     <li>
-      <label><input type="checkbox" />Homelessness</label>
+      <label><input type="checkbox" id="interest-homelessness"/>Homelessness</label>
     </li>
   </ul>
   <h2>Skills</h2>
   <ul id="skill-list"></ul>
   <button type="button" id="add-skill-button" onclick="add(true, true)">Add Skill</button>
-  <script>
+  <script type="text/javascript">
     var skillList = document.getElementById("skill-list");
     var nextIndex = 0;
 
@@ -212,9 +212,14 @@ stylesheet: ["volunteer.css"]
     <textarea rows="4" cols="50" placeholder="What do you hope to get out of a volunteering experience. (skills, friends, etc.)" required></textarea>
   </p>
   
-  <input type="hidden" name="version" value="0.1" />
-  <button>Submit</button>
-  <p id="version">Version: 0.1</p>
+  <input type="hidden" name="version" value="0.1" id="version" />
+  <button type="submit">Submit</button>
+  <p id="version-text"></p>
+  <script type="text/javascript">
+    var versionText = document.getElementById("version-text");
+    var version = document.getElementById("version").value;
+    versionText.innerHTML = `Survey version: ${version}`;
+  </script>
 </form>
 
 
