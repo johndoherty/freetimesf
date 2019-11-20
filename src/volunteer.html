@@ -136,10 +136,13 @@ stylesheet: ["volunteer.css"]
   <h2>Location</h2>
   <ul class="check-list">
     <li>
-      <label><input type="checkbox" name="mission" />Mission</label>
+      <label><input type="checkbox" name="location-mission" />Mission</label>
     </li>
     <li>
-      <label><input type="checkbox" name="financial-district" />Financial District</label>
+      <label><input type="checkbox" name="location-financial-district" />Financial District</label>
+    </li>
+    <li>
+      TODO...
     </li>
   </ul>
   <h2>Areas of Interest</h2>
@@ -164,6 +167,7 @@ stylesheet: ["volunteer.css"]
     </li>
   </ul>
   <h2>Skills</h2>
+  <p class="subheading">Examples: Languages, arts, coding, engineering.</p>
   <ul id="skill-list"></ul>
   <button type="button" id="add-skill-button" onclick="add(true, true)">Add Skill</button>
   <script type="text/javascript">
