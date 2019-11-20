@@ -107,3 +107,6 @@ button:active {
   background-color: white;
 }
 
+.remove-skill-button:active {
+  background-color: red;
+}
