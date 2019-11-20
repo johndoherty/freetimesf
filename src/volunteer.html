@@ -20,10 +20,10 @@ stylesheet: ["volunteer.css"]
 <form name="volunteer-test" method="POST" data-netlify="true">
   <h2>Contact</h2>
   <p>
-    <label>Email <input type="email" title="Where we will send your weekly newsletter." required/></label>
+    <label>Email <input type="email" name="email" title="Where we will send your weekly newsletter." required/></label>
   </p>
   <p>
-    <label>Name <input type="text" title="To identify in your newsletter (Not required)."/></label>
+    <label>Name <input type="text" name="name" title="To identify in your newsletter (Not required)."/></label>
   </p>
   <h2>Availability</h2>
 
@@ -41,97 +41,93 @@ stylesheet: ["volunteer.css"]
     <tr>
       <td>Morning</td>
       <td>
-        <input type="checkbox" id="morning-sun" class="time-check" />
+        <input type="checkbox" id="morning-sun" name="morning-sun" class="time-check" />
         <label class="time" for="morning-sun" title="Sunday morning"></label>
       </td>
       <td>
-        <input type="checkbox" id="morning-mon" class="time-check" />
+        <input type="checkbox" id="morning-mon" name="morning-mon" class="time-check" />
         <label class="time" for="morning-mon"></label>
       </td>
       <td>
-        <input type="checkbox" id="morning-tues" class="time-check" />
+        <input type="checkbox" id="morning-tues" name="morning-tues" class="time-check" />
         <label class="time" for="morning-tues"></label>
       </td>
       <td>
-        <input type="checkbox" id="morning-wed" class="time-check" />
+        <input type="checkbox" id="morning-wed" name="morning-wed" class="time-check" />
         <label class="time" for="morning-wed"></label>
       </td>
       <td>
-        <input type="checkbox" id="morning-thurs" class="time-check" />
+        <input type="checkbox" id="morning-thurs" name="morning-thurs" class="time-check" />
         <label class="time" for="morning-thurs"></label>
       </td>
       <td>
-        <input type="checkbox" id="morning-fri" class="time-check" />
+        <input type="checkbox" id="morning-fri" name="morning-fri" class="time-check" />
         <label class="time" for="morning-fri"></label>
       </td>
       <td>
-        <input type="checkbox" id="morning-sat" class="time-check" />
+        <input type="checkbox" id="morning-sat" name="morning-sat" class="time-check" />
         <label class="time" for="morning-sat"></label>
       </td>
     </tr>
     <tr>
       <td>Afternoon</td>
       <td>
-        <input type="checkbox" id="afternoon-sun" class="time-check" />
+        <input type="checkbox" id="afternoon-sun" name="afternoon-sun" class="time-check" />
         <label class="time" for="afternoon-sun"></label>
       </td>
       <td>
-        <input type="checkbox" id="afternoon-mon" class="time-check" />
+        <input type="checkbox" id="afternoon-mon" name="afternoon-mon" class="time-check" />
         <label class="time" for="afternoon-mon"></label>
       </td>
       <td>
-        <input type="checkbox" id="afternoon-tues" class="time-check" />
+        <input type="checkbox" id="afternoon-tues" name="afternoon-tues" class="time-check" />
         <label class="time" for="afternoon-tues"></label>
       </td>
       <td>
-        <input type="checkbox" id="afternoon-wed" class="time-check" />
+        <input type="checkbox" id="afternoon-wed" name="afternoon-wed" class="time-check" />
         <label class="time" for="afternoon-wed"></label>
       </td>
       <td>
-        <input
-          type="checkbox"
-          id="afternoon-thurs"
-          class="time-check"
-        />
+        <input type="checkbox" id="afternoon-thurs" name="afternoon-thurs" class="time-check" />
         <label class="time" for="afternoon-thurs"></label>
       </td>
       <td>
-        <input type="checkbox" id="afternoon-fri" class="time-check" />
+        <input type="checkbox" id="afternoon-fri" name="afternoon-fri" class="time-check" />
         <label class="time" for="afternoon-fri"></label>
       </td>
       <td>
-        <input type="checkbox" id="afternoon-sat" class="time-check" />
+        <input type="checkbox" id="afternoon-sat" name="afternoon-sat" class="time-check" />
         <label class="time" for="afternoon-sat"></label>
       </td>
     </tr>
     <tr>
       <td>Evening</td>
       <td>
-        <input type="checkbox" id="evening-sun" class="time-check" />
+        <input type="checkbox" id="evening-sun" name="evening-sun" class="time-check" />
         <label class="time" for="evening-sun"></label>
       </td>
       <td>
-        <input type="checkbox" id="evening-mon" class="time-check" />
+        <input type="checkbox" id="evening-mon" name="evening-mon" class="time-check" />
         <label class="time" for="evening-mon"></label>
       </td>
       <td>
-        <input type="checkbox" id="evening-tues" class="time-check" />
+        <input type="checkbox" id="evening-tues" name="evening-tues" class="time-check" />
         <label class="time" for="evening-tues"></label>
       </td>
       <td>
-        <input type="checkbox" id="evening-wed" class="time-check" />
+        <input type="checkbox" id="evening-wed" name="evening-wed" class="time-check" />
         <label class="time" for="evening-wed"></label>
       </td>
       <td>
-        <input type="checkbox" id="evening-thurs" class="time-check" />
+        <input type="checkbox" id="evening-thurs" name="evening-thurs" class="time-check" />
         <label class="time" for="evening-thurs"></label>
       </td>
       <td>
-        <input type="checkbox" id="evening-fri" class="time-check" />
+        <input type="checkbox" id="evening-fri" name="evening-fri" class="time-check" />
         <label class="time" for="evening-fri"></label>
       </td>
       <td>
-        <input type="checkbox" id="evening-sat" class="time-check" />
+        <input type="checkbox" id="evening-sat" name="evening-sat" class="time-check" />
         <label class="time" for="evening-sat"></label>
       </td>
     </tr>
@@ -140,31 +136,31 @@ stylesheet: ["volunteer.css"]
   <h2>Location</h2>
   <ul class="check-list">
     <li>
-      <label><input type="checkbox" />Mission</label>
+      <label><input type="checkbox" name="mission" />Mission</label>
     </li>
     <li>
-      <label><input type="checkbox" />Financial District</label>
+      <label><input type="checkbox" name="financial-district" />Financial District</label>
     </li>
   </ul>
   <h2>Areas of Interest</h2>
   <ul class="check-list">
     <li>
-      <label><input type="checkbox" id="interest-animals" />Animals</label>
+      <label><input type="checkbox" id="interest-animals" name="interest-animals" />Animals</label>
     </li>
     <li>
-      <label><input type="checkbox" id="interest-arts" />Arts</label>
+      <label><input type="checkbox" id="interest-arts" name="interest-arts" />Arts</label>
     </li>
     <li>
-      <label><input type="checkbox" id="interest-education"/>Education</label>
+      <label><input type="checkbox" id="interest-education" name="interest-education" />Education</label>
     </li>
     <li>
-      <label><input type="checkbox" id="interest-environment"/>Environment</label>
+      <label><input type="checkbox" id="interest-environment" name="interest-environment" />Environment</label>
     </li>
     <li>
-      <label><input type="checkbox" id="interest-health"/>Health Care</label>
+      <label><input type="checkbox" id="interest-health" name="interest-health" />Health Care</label>
     </li>
     <li>
-      <label><input type="checkbox" id="interest-homelessness"/>Homelessness</label>
+      <label><input type="checkbox" id="interest-homelessness" name="interest-homelessness" />Homelessness</label>
     </li>
   </ul>
   <h2>Skills</h2>
@@ -182,6 +178,7 @@ stylesheet: ["volunteer.css"]
       textInput.placeholder = "Skill";
       textInput.className = "skill-text";
       textInput.id = `skill-${nextIndex}`;
+      textInput.name = `skill-${nextIndex}`;
       nextIndex++;
 
       listNode.appendChild(textInput);
@@ -207,9 +204,9 @@ stylesheet: ["volunteer.css"]
 
     add(false, false);
   </script>
-  <h2>You</h2>
+  <h2>Why</h2>
   <p>
-    <textarea rows="4" cols="50" placeholder="What do you hope to get out of a volunteering experience. (skills, friends, etc.)" required></textarea>
+    <textarea name="why" rows="4" cols="50" placeholder="What do you hope to get out of a volunteering experience. (skills, friends, etc.)" required></textarea>
   </p>
   
   <input type="hidden" name="version" value="0.1" id="version" />
