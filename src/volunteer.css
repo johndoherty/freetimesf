@@ -110,3 +110,23 @@ button:active {
 .remove-skill-button:active {
   background-color: red;
 }
+
+#sf-map {
+  background-color: lightblue;
+  display: block;
+  width: 100%;
+}
+
+.district {
+  stroke: black;
+  stroke-width: 1px;
+  fill: white;
+}
+
+.district:hover {
+  fill: #eee;
+}
+
+.district.selected {
+  fill: #48b1e1;
+}
