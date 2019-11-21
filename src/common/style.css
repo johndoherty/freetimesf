@@ -1,5 +1,5 @@
 body {
-  font-family: 'EB Garamond', serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1em;
   margin: 0;
 }
@@ -12,7 +12,7 @@ body {
 
 .centered-h {
   flex: 1;
-  max-width: 900px;
+  max-width: 850px;
 }
 
 .center-v-container {
@@ -55,7 +55,7 @@ header a:hover {
 }
 
 header a:active {
-  color: black;
+  color: #4b616b;
   text-decoration: none;
 }
 
@@ -76,13 +76,35 @@ nav li {
 }
 
 h1 {
+  font-family: 'Slabo 27px', serif;
   font-size: 2em;
   font-weight: bold;
 }
 
 h2 {
+  font-family: 'Slabo 27px', serif;
   font-size: 1.6em;
   font-weight: normal;
+}
+
+a:link {
+  color: blue;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: blue;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+a:active {
+  color: black;
+  text-decoration: none;
 }
 
 #content {
