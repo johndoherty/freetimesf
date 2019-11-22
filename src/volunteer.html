@@ -20,10 +20,12 @@ stylesheet: ["volunteer.css"]
 <form name="volunteer-test" method="POST" data-netlify="true">
   <h2>Contact</h2>
   <p class="contact">
-    <label>Email <input type="email" name="email" title="Where we will send your weekly newsletter." required/></label>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" title="Where we will send your weekly newsletter." required/>
   </p>
   <p class="contact">
-    <label>Name <input type="text" name="name" title="To identify in your newsletter (Not required)."/></label>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" title="To identify in your newsletter (Not required)."/>
   </p>
   <h2>Availability</h2>
 

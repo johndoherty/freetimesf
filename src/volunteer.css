@@ -49,8 +49,8 @@ textarea:focus {
   background-color: #f0faff;
 }
 
-.contact input {
-  margin-left: 5px;
+.contact label {
+  margin-right: 5px;
 }
 
 .check-list {
