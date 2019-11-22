@@ -9,8 +9,8 @@ a.primary {
   color: black;
   border: solid 2px black;
   padding: 16px;
-  max-width: 400px;
-  width: 90%;
+  max-width: 450px;
+  width: 100%;
 }
 
 a.primary:hover {

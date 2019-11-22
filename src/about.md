@@ -7,7 +7,7 @@ layout: primary.hbs
 
 ## Mission
 
-I created Free Time SF because I believe the answers to a lot of our city's problems lie in people taking ownership of their community. San Francisco faces complex challenges, but it is also home to a lot of very smart, motivated people. By connecting those interested in improving their community with leaders working to solve these problems, we can start making progress.
+I created Free Time SF because I believe the answer to a lot of our city's problems lies in people taking ownership of their community. San Francisco faces complex challenges, but it is also home to a lot of very smart, motivated people. By connecting those interested in improving their community with leaders working to solve these problems, we can start making progress.
 
 I believe the pool of interested volunteers is much larger than most people realize.  People are always looking to make friends and work on projects that have a positive impact. Volunteering can fill this need for a lot of people.
 

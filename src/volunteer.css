@@ -21,26 +21,36 @@ input[type='text'], input[type='email'] {
   font-size: 1em;
   width: 100%;
   max-width: 300px;
-  padding: 5px 2px;
+  padding: 5px 3px;
   font-family: 'Source Sans Pro', sans-serif;
+  border: 1px solid black;
+}
+
+input[type='text']:hover, input[type='email']:hover {
+  background-color: #eee;
+}
+
+input[type='text']:focus, input[type='email']:focus {
+  background-color: #f0faff;
 }
 
 textarea {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1em;
   width: 100%;
-  max-width: 600px;
+  border: 1px solid black;
 }
 
-input[type='checkbox'] {
-  /*height: 20px;*/
-  /*width: 20px;*/
-  /*vertical-align: text-top;*/
-  /*margin: 3px;*/
+textarea:hover {
+  background-color: #eee;
 }
 
-label {
-  /*background-color: red;*/
+textarea:focus {
+  background-color: #f0faff;
+}
+
+.contact input {
+  margin-left: 5px;
 }
 
 .check-list {
@@ -50,7 +60,43 @@ label {
 }
 
 .check-list li {
-  margin-bottom: .2em;
+  margin-bottom: .4em;
+}
+
+.check-list label {
+  display: flex;
+  cursor: pointer;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.check-list input[type='checkbox'] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.check-list label .checkmark {
+  display: block;
+  height: 1.5em;
+  width: 1.5em;
+  background-color: white;
+  border: 1px solid black;
+  margin-right: .4em;
+}
+
+.check-list label:hover .checkmark {
+  background-color: #eee;
+}
+
+.check-list input:checked ~ .checkmark {
+  background-color: #48b1e1;
+}
+
+.check-list label .text {
+  display: block;
 }
 
 #availability {
@@ -146,6 +192,20 @@ label {
   width: 100%;
 }
 
+#district-checkboxes {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+#district-checkboxes input[type='checkbox'] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
 .district {
   stroke: black;
   stroke-width: 1px;
@@ -156,6 +216,15 @@ label {
   fill: #eee;
 }
 
+.district.park:hover {
+  fill: #d4edc7;
+}
+
 .district.selected {
   fill: #48b1e1;
 }
+
+.district.park.selected {
+  fill: #48b1e1;
+}
+
