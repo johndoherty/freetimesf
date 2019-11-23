@@ -290,7 +290,7 @@ stylesheet: ["volunteer.css"]
 
     districts.forEach(district => {
       const checkboxID = district.id + "-checkbox";
-      document.getElementById(checkboxID);
+      const checkbox = document.getElementById(checkboxID);
 
       district.addEventListener('click', evt => {
         var selected = district.classList.contains('selected');
