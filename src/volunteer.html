@@ -260,20 +260,37 @@ stylesheet: ["volunteer.css"]
        id="south-sf" />
   </g>
   </svg>
-  <div id="district-checkboxes"></div>
+
+
+
+  <div id="district-checkboxes">
+    <input type="checkbox" id="marina-checkbox" name="marina-checkbox" />
+    <input type="checkbox" id="fishermans-warf-checkbox" name="fishermans-warf-checkbox" />
+    <input type="checkbox" id="fidi-checkbox" name="fidi-checkbox" />
+    <input type="checkbox" id="nob-russian-checkbox" name="nob-russian-checkbox" />
+    <input type="checkbox" id="civic-center-tenderloin-checkbox" name="civic-center-tenderloin-checkbox" />
+    <input type="checkbox" id="soma-checkbox" name="soma-checkbox" />
+    <input type="checkbox" id="southeast-checkbox" name="southeast-checkbox" />
+    <input type="checkbox" id="twin-peaks-merced-checkbox" name="twin-peaks-merced-checkbox" />
+    <input type="checkbox" id="mission-checkbox" name="mission-checkbox" />
+    <input type="checkbox" id="castro-noe-checkbox" name="castro-noe-checkbox" />
+    <input type="checkbox" id="richmond-checkbox" name="richmond-checkbox" />
+    <input type="checkbox" id="haight-checkbox" name="haight-checkbox" />
+    <input type="checkbox" id="western-addition-checkbox" name="western-addition-checkbox" />
+    <input type="checkbox" id="bernal-checkbox" name="bernal-checkbox" />
+    <input type="checkbox" id="chinatown-north-beach-checkbox" name="chinatown-north-beach-checkbox" />
+    <input type="checkbox" id="sunset-checkbox" name="sunset-checkbox" />
+    <input type="checkbox" id="golden-gate-park-checkbox" name="golden-gate-park-checkbox" />
+    <input type="checkbox" id="presidio-checkbox" name="presidio-checkbox" />
+    <input type="checkbox" id="south-sf-checkbox" name="south-sf-checkbox" />
+  </div>
 
   <script type="text/javascript">
     var districts = document.querySelectorAll('.district');
-    var checkboxHolder = document.querySelector('#district-checkboxes');
 
     districts.forEach(district => {
-      let checkbox = document.createElement("input");
-      checkbox.type = "checkbox";
-      checkbox.className = "district-checkbox";
-      checkbox.id = `district-${district.id}`;
-      checkbox.name = `district-${district.id}`;
-      checkbox.checked = false;
-      checkboxHolder.appendChild(checkbox);
+      const checkboxID = district.id + "-checkbox";
+      document.getElementById(checkboxID);
 
       district.addEventListener('click', evt => {
         var selected = district.classList.contains('selected');
@@ -335,46 +352,23 @@ stylesheet: ["volunteer.css"]
   </ul>
   <h2>Skills</h2>
   <p class="subheading">Examples: Languages, arts, coding, engineering.</p>
-  <ul id="skill-list"></ul>
-  <button type="button" id="add-skill-button" onclick="add(true, true)">Add Skill</button>
-  <script type="text/javascript">
-    var skillList = document.getElementById("skill-list");
-    var nextIndex = 0;
-
-    function add(focus, removable) {
-      let listNode = document.createElement("li");
-      let textInput = document.createElement("input");
-
-      textInput.type = "text";
-      textInput.placeholder = "Skill";
-      textInput.className = "skill-text";
-      textInput.id = `skill-${nextIndex}`;
-      textInput.name = `skill-${nextIndex}`;
-      nextIndex++;
-
-      listNode.appendChild(textInput);
-
-      if (removable) {
-        let deleteButton = document.createElement("button");
-        deleteButton.innerHTML = "Remove";
-        deleteButton.className = "remove-skill-button";
-        deleteButton.addEventListener("click", evt => {
-          evt.target.parentNode.remove();
-        });
-        listNode.appendChild(deleteButton);
-      }
-
-      skillList.appendChild(listNode);
-
-      if (focus) {
-        textInput.focus();
-      }
-
-      return false;
-    }
-
-    add(false, false);
-  </script>
+  <ol id="skill-list">
+    <li>
+      <input type="text" class="skill-text" id="skill-0" name="skill-0" />
+    </li>
+    <li>
+      <input type="text" class="skill-text" id="skill-1" name="skill-1" />
+    </li>
+    <li>
+      <input type="text" class="skill-text" id="skill-2" name="skill-2" />
+    </li>
+    <li>
+      <input type="text" class="skill-text" id="skill-3" name="skill-3" />
+    </li>
+    <li>
+      <input type="text" class="skill-text" id="skill-4" name="skill-4" />
+    </li>
+  </ol>
   <h2>Why</h2>
   <p>
     <textarea name="why" rows="4" cols="50" placeholder="What do you hope to get out of a volunteering experience. (skills, friends, etc.)" required></textarea>

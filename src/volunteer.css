@@ -172,10 +172,10 @@ textarea:focus {
 }
 
 #skill-list {
-  list-style: none;
+/*  list-style: none;
   margin: 0;
   padding: 0;
-}
+*/}
 
 #skill-list li {
   margin-top: 5px;
