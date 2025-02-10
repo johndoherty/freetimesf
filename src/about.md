@@ -15,15 +15,9 @@ Similarly, many organizations could benefit from more help. While larger nonprof
 
 By making it easier to get involved as a volunteer or an organizer, I hope to tap into a larger pool of people interested in improving San Francisco.
 
-## My Story
-
-My name is John Doherty. I've lived in the Bay Area for about 6 years and in San Francisco for the last two. I've worked at tech companies for a few years, and while I appreciated making a good salary and enjoyed the perks, I couldn't help but feel something was missing.
-
-I left my job and spent some time traveling and visiting friends and family. I also  volunteered as a tutor for Breakthrough SF. I found tutoring to be incredibly rewarding, which was one of the motivations for creating Free Time SF.
-
 ## Contributing
 
-As you may have noticed, I'm not a web developer. If you have some skills, or want to try your hand at web development, I'd love the help. All the code is open source on [GitHub](https://github.com/johndoherty/freetimesf).
+As you may have noticed, I'm not a designer. I'm open to any suggestions that make the site faster or easier to use. All the code is open source on [GitHub](https://github.com/johndoherty/freetimesf).
 
 Feel free to email with any questions or comments: [john@freetimesf.org](mailto:john@freetimesf.org)
 
