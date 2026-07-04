@@ -1,3 +1,7 @@
+body {
+  background-color: pink;
+}
+
 .primary-link-holder {
   display: flex;
   justify-content: center;
